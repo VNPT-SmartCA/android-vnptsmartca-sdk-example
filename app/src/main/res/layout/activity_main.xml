@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnMainInfo"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="98dp"
+        android:hint="MainInfo"
+        android:text="Quản lý tài khoản"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_width="345dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="43dp"
+        android:autofillHints=""
+        android:hint="Vui lòng nhập TranID"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActiveAccount" />
+
+    <Button
+        android:id="@+id/btnConfirmTrans"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:hint="ComfirnTrans"
+        android:text="Xác nhận giao dịch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plain_text_input" />
+
+    <Button
+        android:id="@+id/btnActiveAccount"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="43dp"
+        android:hint="ActiveAccount"
+        android:text="Lấy accessToken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

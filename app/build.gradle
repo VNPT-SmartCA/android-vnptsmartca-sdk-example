@@ -1,0 +1,106 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.6.21'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "vn.vnpt.myapplication"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        ndk {
+            // abiFilters 'armeabi-v7a', 'arm64-v8a','x86_64'
+            debugSymbolLevel 'FULL'
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        profile {
+            initWith debug
+        }
+
+    }
+
+    packagingOptions {
+        pickFirst 'lib/x86/libc++_shared.so'
+        pickFirst 'lib/x86_64/libc++_shared.so'
+        pickFirst 'lib/armeabi-v7a/libc++_shared.so'
+        pickFirst 'lib/arm64-v8a/libc++_shared.so'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    aaptOptions {
+        noCompress "bic"
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+
+//    implementation 'androidx.core:core-ktx:1.7.0'
+//    implementation 'androidx.appcompat:appcompat:1.6.1'
+//    implementation 'com.google.android.material:material:1.10.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+//    debugImplementation 'com.vnpt.smartca.module.vnpt_smartca_module:flutter_debug:1.0'
+//    profileImplementation 'com.vnpt.smartca.module.vnpt_smartca_module:flutter_profile:1.0'
+    implementation 'com.vnpt.smartca.module.vnpt_smartca_module:flutter_release:1.0'
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //khanhht SDK eContract
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.test.espresso:espresso-idling-resource:3.5.1'
+
+//    implementation project(':flutter')
+    implementation files('libs/vnpt_smartca_sdk_lib-release.aar')
+    implementation files('libs/ekyc_sdk-release-v3.2.7.aar')
+//    implementation files('libs/flutter_release-1.0.aar')
+
+    implementation files('libs/eContract-v3.1.0.aar')
+    implementation 'com.squareup.okhttp3:okhttp:4.7.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.6.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:exifinterface:28.0.0'
+    implementation 'com.google.code.gson:gson:2.10'
+    implementation 'net.steamcrafted:load-toast:1.0.12'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
+
+}
