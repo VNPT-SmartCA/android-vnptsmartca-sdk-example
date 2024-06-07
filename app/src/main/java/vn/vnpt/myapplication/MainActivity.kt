@@ -72,8 +72,8 @@ class MainActivity : AppCompatActivity() {
             VNPTSmartCA.getAuthentication { result ->
                 when (result.status) {
                     SmartCAResultCode.SUCCESS_CODE -> {
-                        val obj: CallbackResult = Json.decodeFromString(
-                            CallbackResult.serializer(), result.data.toString()
+                        val obj: CallbackResult = Json.decodeFromString<CallbackResult>(
+                            result.data.toString()
                         )
                         // SDK trả lại token, credential của khách hàng
                         // Đối tác tạo transaction cho khách hàng để lấy transId, sau đó gọi getWaitingTransaction

@@ -27,7 +27,7 @@
           "group": "io.flutter",
           "module": "flutter_embedding_release",
           "version": {
-            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+            "requires": "1.0.0-a5c24f538d05aaf66f7972fb23959d8cafb9f95a"
           }
         },
         {
@@ -48,7 +48,7 @@
           "group": "androidx.fragment",
           "module": "fragment",
           "version": {
-            "requires": "1.6.1"
+            "requires": "1.6.2"
           }
         }
       ],
@@ -56,11 +56,11 @@
         {
           "name": "local_auth_android_release-1.0.aar",
           "url": "local_auth_android_release-1.0.aar",
-          "size": 40477,
-          "sha512": "b431e6608a73f4bf2ad914f5fb1a533f82161e48757facd596eb4cbf94a1b660ec0584bb9d8f03538a35f47e7129533356b82ab5a1161c91ebed40d14d9cdd1f",
-          "sha256": "bf3425df887dd2b643a37718bf736e09a32766135471d98030e05ee5ba869d72",
-          "sha1": "8d14541b8a5a4ec625d557e44584e0e071f2b4e9",
-          "md5": "264e79456c72e4764f84bf2927bd9473"
+          "size": 40479,
+          "sha512": "82dfca6886b97e70e4f784bf458ecb282ac2ab827c8b588b3a974ed1b346009b67468485c61256ed9280ddee7c240b9bcd8210c0affb4890a52c437731046434",
+          "sha256": "28190785e1870fad31ce6b67334df0ef4934faa836ec5b5ca2f0e3d031e60b21",
+          "sha1": "45ba5a856d4ef7ef08095b3710e0294cfb5960e0",
+          "md5": "97f6642478ff0f3030831b07522f7d7f"
         }
       ]
     },
@@ -77,7 +77,7 @@
           "group": "io.flutter",
           "module": "flutter_embedding_release",
           "version": {
-            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+            "requires": "1.0.0-a5c24f538d05aaf66f7972fb23959d8cafb9f95a"
           }
         },
         {
@@ -116,7 +116,7 @@
           "group": "androidx.fragment",
           "module": "fragment",
           "version": {
-            "requires": "1.6.1"
+            "requires": "1.6.2"
           }
         }
       ],
@@ -124,11 +124,11 @@
         {
           "name": "local_auth_android_release-1.0.aar",
           "url": "local_auth_android_release-1.0.aar",
-          "size": 40477,
-          "sha512": "b431e6608a73f4bf2ad914f5fb1a533f82161e48757facd596eb4cbf94a1b660ec0584bb9d8f03538a35f47e7129533356b82ab5a1161c91ebed40d14d9cdd1f",
-          "sha256": "bf3425df887dd2b643a37718bf736e09a32766135471d98030e05ee5ba869d72",
-          "sha1": "8d14541b8a5a4ec625d557e44584e0e071f2b4e9",
-          "md5": "264e79456c72e4764f84bf2927bd9473"
+          "size": 40479,
+          "sha512": "82dfca6886b97e70e4f784bf458ecb282ac2ab827c8b588b3a974ed1b346009b67468485c61256ed9280ddee7c240b9bcd8210c0affb4890a52c437731046434",
+          "sha256": "28190785e1870fad31ce6b67334df0ef4934faa836ec5b5ca2f0e3d031e60b21",
+          "sha1": "45ba5a856d4ef7ef08095b3710e0294cfb5960e0",
+          "md5": "97f6642478ff0f3030831b07522f7d7f"
         }
       ]
     }

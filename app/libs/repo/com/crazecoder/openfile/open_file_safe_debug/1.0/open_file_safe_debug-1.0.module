@@ -27,7 +27,7 @@
           "group": "io.flutter",
           "module": "flutter_embedding_debug",
           "version": {
-            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+            "requires": "1.0.0-a5c24f538d05aaf66f7972fb23959d8cafb9f95a"
           }
         }
       ],
@@ -35,11 +35,11 @@
         {
           "name": "open_file_safe_debug-1.0.aar",
           "url": "open_file_safe_debug-1.0.aar",
-          "size": 14438,
-          "sha512": "f10346dbb5899fb8cbea262fe91f56680d58a67adef07f8922780487860cf99ee2b47dbf0e3c66ca1764f6bba633c57ce01deb2059dbf7399da5e52fe3bfbe34",
-          "sha256": "dfea926328747dd3733f61b3c18a0005801a4a1ffa1066a25cb905321b4d95a2",
-          "sha1": "00060f772a9610f0dd6ae19c26f3909f13193fd6",
-          "md5": "9873453878ae765bf5bd159766dd372f"
+          "size": 14444,
+          "sha512": "173c456b792b46206c27a45e0188971ec7fe43efd2b7df37ee0501897a876e65b7a3b7e49648c5720c953bd93d7a3d6a4ec93ae17a5d838beff05a105b14c439",
+          "sha256": "b9be7557268d13e7ad01da1a8172aac22556b886cfb340992096f639e99da328",
+          "sha1": "124eeb8024c6a85ce03666cb7f8aaec0a1ebb590",
+          "md5": "a34fe6289bfa044a7ae20eead0784c3b"
         }
       ]
     },
@@ -56,7 +56,7 @@
           "group": "io.flutter",
           "module": "flutter_embedding_debug",
           "version": {
-            "requires": "1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad"
+            "requires": "1.0.0-a5c24f538d05aaf66f7972fb23959d8cafb9f95a"
           }
         },
         {
@@ -71,11 +71,11 @@
         {
           "name": "open_file_safe_debug-1.0.aar",
           "url": "open_file_safe_debug-1.0.aar",
-          "size": 14438,
-          "sha512": "f10346dbb5899fb8cbea262fe91f56680d58a67adef07f8922780487860cf99ee2b47dbf0e3c66ca1764f6bba633c57ce01deb2059dbf7399da5e52fe3bfbe34",
-          "sha256": "dfea926328747dd3733f61b3c18a0005801a4a1ffa1066a25cb905321b4d95a2",
-          "sha1": "00060f772a9610f0dd6ae19c26f3909f13193fd6",
-          "md5": "9873453878ae765bf5bd159766dd372f"
+          "size": 14444,
+          "sha512": "173c456b792b46206c27a45e0188971ec7fe43efd2b7df37ee0501897a876e65b7a3b7e49648c5720c953bd93d7a3d6a4ec93ae17a5d838beff05a105b14c439",
+          "sha256": "b9be7557268d13e7ad01da1a8172aac22556b886cfb340992096f639e99da328",
+          "sha1": "124eeb8024c6a85ce03666cb7f8aaec0a1ebb590",
+          "md5": "a34fe6289bfa044a7ae20eead0784c3b"
         }
       ]
     }
