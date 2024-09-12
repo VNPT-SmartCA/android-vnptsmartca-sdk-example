@@ -15,25 +15,25 @@
     <dependency>
       <groupId>io.flutter</groupId>
       <artifactId>flutter_embedding_profile</artifactId>
-      <version>1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad</version>
+      <version>1.0.0-2e4ba9c6fb499ccd4e81420543783cc7267ae406</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.flutter</groupId>
       <artifactId>armeabi_v7a_profile</artifactId>
-      <version>1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad</version>
+      <version>1.0.0-2e4ba9c6fb499ccd4e81420543783cc7267ae406</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.flutter</groupId>
       <artifactId>arm64_v8a_profile</artifactId>
-      <version>1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad</version>
+      <version>1.0.0-2e4ba9c6fb499ccd4e81420543783cc7267ae406</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.flutter</groupId>
       <artifactId>x86_64_profile</artifactId>
-      <version>1.0.0-0545f8705df301877d787107bac1a6e9fc9ee1ad</version>
+      <version>1.0.0-2e4ba9c6fb499ccd4e81420543783cc7267ae406</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -105,12 +105,6 @@
     <dependency>
       <groupId>dev.fluttercommunity.plus.packageinfo</groupId>
       <artifactId>package_info_plus_profile</artifactId>
-      <version>1.0</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.crazecoder.openfile</groupId>
-      <artifactId>open_file_safe_profile</artifactId>
       <version>1.0</version>
       <scope>compile</scope>
     </dependency>
