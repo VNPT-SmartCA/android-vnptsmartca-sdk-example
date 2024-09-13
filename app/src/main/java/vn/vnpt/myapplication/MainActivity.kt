@@ -1,5 +1,6 @@
 package vn.vnpt.myapplication
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.DialogInterface
 import android.os.Bundle
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     var VNPTSmartCA = VNPTSmartCASDK()
     lateinit var editTextTrans: EditText;
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -31,6 +33,8 @@ class MainActivity : AppCompatActivity() {
 
         val btnConfirmTrans = findViewById<Button>(R.id.btnConfirmTrans)
         val bntMainInfo = findViewById<Button>(R.id.btnMainInfo)
+        val btnSignOut = findViewById<Button>(R.id.btnSignOut)
+        val btnCreateAccount = findViewById<Button>(R.id.btnCreateAccount)
 
 
         var customParams = CustomParams(
@@ -64,6 +68,56 @@ class MainActivity : AppCompatActivity() {
         }
         btnConfirmTrans.setOnClickListener {
             getWaitingTransaction(editTextTrans.text.toString())
+        }
+        btnSignOut.setOnClickListener {
+            signOut()
+        }
+        btnCreateAccount.setOnClickListener {
+            createAccount()
+        }
+
+    }
+    private fun signOut() {
+        try {
+            VNPTSmartCA.signOut { result ->
+                when (result.status) {
+                    SmartCAResultCode.SUCCESS_CODE -> {
+                        // Xử lý khi confirm thành công
+                        val builder = AlertDialog.Builder(this)
+                        builder.setTitle("Thông báo")
+                        builder.setMessage("Đăng xuất thành công")
+                        builder.setPositiveButton(
+                            "Close"
+                        ) { dialog, _ -> dialog.dismiss() }
+                        builder.show()
+                    }
+
+                    else -> {
+                        // Xử lý khi confirm thất bại
+                    }
+                }
+            }
+        } catch (ex: java.lang.Exception) {
+            throw ex;
+        }
+    }
+
+    private fun createAccount() {
+        try {
+            VNPTSmartCA.createAccount { result ->
+                when (result.status) {
+                    SmartCAResultCode.SUCCESS_CODE -> {
+                        // Xử lý khi confirm thành công
+
+                    }
+
+                    else -> {
+                        // Xử lý khi confirm thất bại
+                    }
+                }
+            }
+        } catch (ex: java.lang.Exception) {
+            throw ex;
         }
     }
 
