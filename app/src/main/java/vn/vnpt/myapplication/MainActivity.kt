@@ -51,8 +51,8 @@ class MainActivity : AppCompatActivity() {
         )
 
         var config = ConfigSDK(
-            clientId = "4185-637127995547330633.apps.signserviceapi.com",
-            clientSecret = "NGNhMzdmOGE-OGM2Mi00MTg0",
+            clientId = "",
+            clientSecret = "",
             env = SmartCAEnvironment.DEMO_ENV,
             customParams = customParams,
             lang = SmartCALanguage.VI,
