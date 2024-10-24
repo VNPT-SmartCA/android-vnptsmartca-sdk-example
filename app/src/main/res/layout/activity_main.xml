@@ -56,5 +56,23 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMainInfo" />
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="43dp"
+        android:text="Đăng xuất"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmTrans" />
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="43dp"
+        android:text="Tạo tài khoản"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignOut" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
