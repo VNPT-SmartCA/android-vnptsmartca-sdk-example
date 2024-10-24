@@ -26,7 +26,7 @@
     <dependency>
       <groupId>io.flutter</groupId>
       <artifactId>flutter_embedding_release</artifactId>
-      <version>1.0.0-2e4ba9c6fb499ccd4e81420543783cc7267ae406</version>
+      <version>1.0.0-c4cd48e186460b32d44585ce3c103271ab676355</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -38,7 +38,7 @@
     <dependency>
       <groupId>androidx.annotation</groupId>
       <artifactId>annotation</artifactId>
-      <version>1.8.0</version>
+      <version>1.7.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
